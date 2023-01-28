@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>{{n1}}</h1>
+    <h1>{{n2.0}}</h1>
+    <h1>{{n2.1}}</h1>
+    <h1>{{n2.2}}</h1>
+    {% for item in n2 %}
+    <li>{{item}}</li>
+    {% endfor %} {{n3}} {{n3.name}}
+    <ul>
+        {% for k,v in n3.items %}
+        <li>{{k}}={{v}}</li>
+        {% endfor %}
+    </ul>
+    {% if n1 == "你的名字" %}
+    <h1>大啊大大</h1>
+    <h1>111111</h1>
+    {% endif %}
+</body>
+
+</html>
