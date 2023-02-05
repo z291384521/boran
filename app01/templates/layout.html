@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
-    <script src="{% static 'plugins/bootstrap-3.4.1-dist/js/bootstrap.min.js' %}"></script>
-    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1-dist/css/bootstrap.min.css' %}"> 
+    <script src="{% static 'plugins/bootstrap-3.4.1/js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1/css/bootstrap.min.css' %}"> 
     {% block css %}{% endblock %}
     <title>起步</title>
 </head>
@@ -35,8 +35,8 @@
                         <a href="/depart/list/">部门管理 <span class="sr-only">(current)</span></a>
                     </li>
                     <li><a href="/user/list/">用户管理</a></li>
-                    </li>
                     <li><a href="/game/list/">游戏管理</a></li>
+                    <li><a href="/admin/list/">管理员管理</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">登录</a></li>

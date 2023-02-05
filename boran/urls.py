@@ -17,9 +17,7 @@ Including another URLconf
 from django.urls import path
 # from app01.views import admin
 # from login import view
-from app01.views import depart
-from app01.views import game
-from app01.views import user
+from app01.views import depart,game,user,admin,account
 # 访问inex/ 执行views.index
 urlpatterns = [
     # path('admin/', admin.site.urls),
@@ -56,5 +54,11 @@ urlpatterns = [
     path("game/list/", game.game_list),
     path("game/add/", game.game_add),
     path("game/<int:nid>/edit/", game.game_edit),
-]
 
+    path("admin/list/",admin.admin_list),
+    path("admin/add/",admin.admin_add),
+    path("admin/<int:nid>/edit/",admin.admin_edit),
+    path("admin/<int:nid>/reset/",admin.admin_reset),
+    #login
+    path("login/",account.login),
+]
